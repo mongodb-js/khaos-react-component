@@ -39,8 +39,7 @@ The test environment is configured to test components with [Enzyme][enzyme] (inc
 
 ## Developing
 
-Almost all of your development will happen in the `./src` directory. Add new components
-to `./src/components`, actions to `./src/actions/index.js` and if you need additional stores, add them to `./src/stores`.
+Almost all of your development will happen in the `./src` directory.
 
 #### Directory Structure
 
@@ -49,7 +48,7 @@ For completeness, below is a list of directories present in this module:
 - `.storybook` react-storybook and webpack configuration. You usually don't need to touch this.
 - `electron` code to start electron, open a browser window and load the source. You don't usually need to touch this, unless you want to render something other than the main component in Electron.
 - `lib` compiled version of your components (plain javascript instead of `jsx`) and styles (`css` instead of `less`). Never change anything here as this entire folder gets automatically created and overwritten.
-- `src` components, actions and stores source code, as well as style files. This is the place to implement your own components. `npm run compile` will use `./src` as input and create `./lib`.
+- `src` source code of your component(s), as well as style files. This is the place to implement your own components. `npm run compile` will use `./src` as input and create `./lib`.
 - `stories` stories for react-storybook. You can add as many story files as you like, they are automatically added to storybook.
 - `test` implement your tests here, and name the files `*.test.js`.
 

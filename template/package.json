@@ -24,7 +24,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "react": "^15.3.0",
-    "react-dom": "^15.3.0",
+    "react-dom": "^15.3.0"
   },
   "devDependencies": {
     "@kadira/react-storybook-addon-info": "^3.2.1",
