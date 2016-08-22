@@ -6,8 +6,7 @@ const React = require('react');
 
 const shallow = require('enzyme').shallow;
 
-const {{pascalcase name}}Component = require('../lib/components');
-const ToggleButton = require('../lib/components/toggle-button');
+const {{pascalcase name}}Component = require('../lib/components/{{name}}');
 
 // use chai-enzyme assertions, see https://github.com/producthunt/chai-enzyme
 chai.use(chaiEnzyme());
@@ -21,11 +20,5 @@ describe('<{{pascalcase name}}Component />', function() {
 
   it('should contain one <h2> tag', function() {
     expect(component.find('h2')).to.have.length(1);
-  });
-  it('should contain one <ToggleButton />', function() {
-    expect(component.find(ToggleButton)).to.have.length(1);
-  });
-  it('should initially have state {status: \'enabled\'}', function() {
-    expect(component).to.have.state('status', 'enabled');
   });
 });

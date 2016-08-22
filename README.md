@@ -1,7 +1,6 @@
-# khaos-compass-package
+# khaos-react-component
 
-> Boilerplate template for developing new Compass packages with React components
-and Reflux stores and actions.
+> Boilerplate template for developing React components.
 
 ## Installation
 
@@ -11,27 +10,25 @@ This module is a [khaos][khaos] template. If you don't have khaos installed yet,
 npm install -g khaos
 ```
 
-Now create a new package `<mypackage>` based on this template with:
+Now create a new component module `<mycomponent>` based on this template with:
 
 ```
-khaos create mongodb-js/khaos-compass-package ./<mypackage>
+khaos create mongodb-js/khaos-react-component ./<mycomponent>
 ```
 
 You are prompted to fill out some template variables:
 
-- `name`: short name of the package, e.g. `query-bar`, or `db-stats` (do not use spaces!)
-- `scope`: the scope of the component. Use `Collection` for collection level scope (e.g. a view
-  on the collection level), and `App` for global application scope. More on scopes TBD.
-- `description`: a one sentence description of the package.
+- `name`: short name of the component, e.g. `button-row`, or `view-switcher` (do not use spaces!)
+- `description`: a one sentence description of the component.
 
-Once the package is created, install the dependencies with:
+Once the component module is created, install the dependencies with:
 
 ```
-cd <mypackage>
+cd <mycomponent>
 npm install
 ```
 
-You're now ready to implement your Compass package.
+You're now ready to implement your React component.
 
 ## Features
 
@@ -56,8 +53,7 @@ The test environment is configured to test components with [Enzyme][enzyme] (inc
 
 ## Developing
 
-Almost all of your development will happen in the `./src` directory. Add new components
-to `./src/components`, actions to `./src/actions/index.js` and if you need additional stores, add them to `./src/stores`.
+Almost all of your development will happen in the `./src` directory.
 
 #### Directory Structure
 
@@ -66,7 +62,7 @@ For completeness, below is a list of directories present in this module:
 - `.storybook` react-storybook and webpack configuration. You usually don't need to touch this.
 - `electron` code to start electron, open a browser window and load the source. You don't usually need to touch this, unless you want to render something other than the main component in Electron.
 - `lib` compiled version of your components (plain javascript instead of `jsx`) and styles (`css` instead of `less`). Never change anything here as this entire folder gets automatically created and overwritten.
-- `src` components, actions and stores source code, as well as style files. This is the place to implement your own components. `npm run compile` will use `./src` as input and create `./lib`.
+- `src` source code of your component(s), as well as style files. This is the place to implement your own components. `npm run compile` will use `./src` as input and create `./lib`.
 - `stories` stories for react-storybook. You can add as many story files as you like, they are automatically added to storybook.
 - `test` implement your tests here, and name the files `*.test.js`.
 

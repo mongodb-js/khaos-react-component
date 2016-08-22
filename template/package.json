@@ -23,11 +23,8 @@
   ],
   "license": "Apache-2.0",
   "dependencies": {
-    "ampersand-app": "^1.0.4",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
-    "reflux": "^0.4.1",
-    "reflux-state-mixin": "^0.7.0"
   },
   "devDependencies": {
     "@kadira/react-storybook-addon-info": "^3.2.1",
